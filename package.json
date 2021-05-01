@@ -1,0 +1,62 @@
+{
+    "name": "czbank-ui-test",
+    "version": "0.1.5",
+    "private": false,
+    "description": "修复TableHeaderButton组件样式问题",
+    "author": {
+        "name": "yanchao",
+        "email": "yanchaos@aliyun.com"
+    },
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "lib": "vue-cli-service build --target lib --name czbank-ui-test --dest lib packages/index.js",
+        "styleguide": "vue-cli-service styleguidist",
+        "styleguide:build": "vue-cli-service styleguidist:build"
+    },
+    "main": "lib/czbank-ui-test.umd.min.js",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "core-js": "^3.6.5",
+        "element-ui": "^2.13.2",
+        "qs": "^6.9.4",
+        "sass-loader": "^9.0.2",
+        "vue": "^2.6.11",
+        "vue-markdown-loader": "^2.4.1",
+        "vue-router": "^3.2.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.4.0",
+        "@vue/cli-plugin-eslint": "~4.4.0",
+        "@vue/cli-plugin-router": "^4.4.6",
+        "@vue/cli-service": "~4.4.0",
+        "babel-eslint": "^10.1.0",
+        "babel-plugin-component": "^1.1.1",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "node-sass": "^4.14.1",
+        "vue-cli-plugin-styleguidist": "^4.26.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "license": "MIT"
+}
